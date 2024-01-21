@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="back vedio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="apratech-logo-pngg" alt="Arpatech Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">Cheers</a>
+                <a href="#">Call: <span class="mob-number">03400181746</span></a>
+            </div>
+            <div class="hamburger-menu">&#9776;</div>
+        </nav>
+    </header>
+
+    <div class="cnter-img">
+        <img src="cnter.png">
+    </div>
+    <div class="main-heading">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;WORLD'S FINEST
+            <br>
+            TECHNOLOGY HUB
+        </h1>
+    </div>
+    <div class="contents">
+        <h2>We are Arpatech</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic mollitia, the work dictfugiajjjjjj
+            voluptates<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspea quo nesciunt beatae eos totam maiores, eligendi
+            similique, </p>
+    </div>
+    <div class="btn">
+        <button id="btn1">VEIW SERVICES</button>
+        <button id="btn2">VIEW PORTFOLIO</button>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navLinks.classList.toggle('show');
+        });
+    });
+
+</script>
+
+</html>
