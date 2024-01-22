@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -30,7 +31,9 @@
                 <a href="#">Contact</a>
                 <a href="#">Cheers</a>
                 <a href="#">Call: <span class="mob-number">03400181746</span></a>
+                <button class="btn-nav btn-container">View Free Queto</button>
             </div>
+        
             <div class="hamburger-menu">&#9776;</div>
         </nav>
     </header>
@@ -54,6 +57,49 @@
         <button id="btn1">VEIW SERVICES</button>
         <button id="btn2">VIEW PORTFOLIO</button>
     </div>
+    <!-- ===========================anathor section=========================== -->
+    
+
+    <section class="services">
+        <h2 class="heading">Our services</h2>
+
+        <div class="services-container">
+            <div class="services-box box1">
+                <i class='bx bx-male'></i>
+                <h3>sana ullah akhonzada</h3>
+                <p>Empower your digital presence with our comprehensive web development services. In Frontend Development,
+                     we bring designs to life, creating immersive user experiences with cutting-edge technologies, responsive layouts,
+                      and pixel-perfect precision.
+                     Elevate your brand with visually stunning and seamlessly functional interfaces.</p>
+                
+            </div>
+
+
+
+            <div class="services-box box">
+                <i class='bx bx-male'></i>
+                <h3>shahzaib parwana khanzada</h3>
+                <p>Unlock the power of data with our web scraping services. From e-commerce giants like Amazon and Daraz to various websites, 
+                    we efficiently gather, organize, and deliver valuable insights.
+                     Harness the potential of web data for informed decisions and strategic growth.</p>
+                
+            </div>
+
+
+
+            <div class="services-box">
+                <i class='bx bx-female'></i>
+                <h3>aziz ameerzada</h3>
+                <p>Explore the possibilities with our Python Development services. From robust web applications and automation
+                     scripts to data analysis tools and machine learning solutions, we leverage the versatility of Python to build 
+                     innovative and scalable solutions tailored to your 
+                    needs. Unleash the potential of Python programming for a wide range of applications.</p>
+             
+            </div>
+        </div>
+        
+    
+    </section>
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -64,6 +110,34 @@
             navLinks.classList.toggle('show');
         });
     });
+    document.addEventListener("DOMContentLoaded", function() {
+    const btnContainer = document.querySelector('.btn-container');
+    let lastScrollPosition = window.scrollY;
+  
+    function handleScroll() {
+      const currentScrollPosition = window.scrollY;
+  
+      if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 50) {
+        // Scrolling down and passed a certain scroll position
+        btnContainer.style.transform = 'rotate(90deg)';
+        btnContainer.style.top = '40vh';
+        btnContainer.style.right = '0';
+      } else {
+        // Scrolling up or at the top
+        btnContainer.style.transform = 'rotate(0deg)';
+        btnContainer.style.top = '0';
+        btnContainer.style.right = '20px';
+      }
+  
+      lastScrollPosition = currentScrollPosition;
+    }
+  
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+  });
+  
+  
+  
 
 </script>
 

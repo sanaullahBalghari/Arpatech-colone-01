@@ -38,6 +38,23 @@ nav {
 
     height: 80px;
 }
+.btn-nav{
+    font-size: 1.1rem;
+    background-color: rgb(219, 219, 95);
+    color: black;
+    font-weight: 600;
+    border: 0.1rem solid yellowgreen;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin-left: 17rem;
+    margin-top: -1rem;
+    transition: .5s;
+}
+.btn-nav:hover{
+    color: white;
+    box-shadow: 0 0 1rem rgb(219, 219, 95);
+    /* transition: .5s; */
+}
 
 .logo img {
     position: relative;
@@ -141,6 +158,68 @@ nav {
     cursor: pointer;
     background-color: white;
     color: goldenrod;
+}
+/* ================================================================service========================================== */
+
+.services{
+    margin-bottom: 5rem;
+    
+}
+.heading{
+    color: #dddfe4;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+
+}
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: whitesmoke;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid yellowgreen;
+    transition: .5s ease ease-in ease-in-out;
+}
+.services-container .services-box:hover{
+    border-color: yellowgreen;
+    transform: scale(1.02);
+}
+.box1{
+    transform: scale(1.02);
+}
+
+.services-container .box1:hover{
+   background-color: aquamarine;
+
+}
+.services-box{
+    height: 35rem;
+    width: 15rem;
+}
+
+.services-box i{
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 4rem;
+
+}
+
+.services-box h3{
+    color: #2b2b2b;
+    font-size: 2.6rem;
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    color: #323946;
 }
 
 
